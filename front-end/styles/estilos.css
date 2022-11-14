@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    overflow-y: scroll;
+}
+
+/*Navbar*/
+
+nav {
+    background: #0e9f95;
+    height: 80px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    line-height: 80px;
+    z-index: 100;
+    margin-right: 100px;
+}
+
+.container-logo {
+    z-index: 100;
+    cursor: pointer;
+}
+
+.container-logo h2 {
+    margin-left: 90px;
+    color: #fff;
+    font-weight: 240px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.container-logo h2 span {
+    color: #ff4000;
+    font-weight: 700;
+}
+
+.links .link {
+    display: inline-block;
+}
+
+.links .link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin: 0 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.links .link a:hover {
+    color: #ff4000;
+}
+
+.boton_sesion {
+    background: #ff4000;
+    color : #fff;
+    border-radius: 5px;
+    border-color: #ff4000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.boton_sesion:hover {
+    background: #fff;
+    color: #ff4000;
+}
+
+.toggle {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 915px){
+    .toggle {
+        display: inline-block;
+    }
+
+    .links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #00bb7a;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        width: 100%;
+        z-index: -1;
+        top:-100vh    
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .links .link :hover{
+        background: #89ff95;
+    }
+
+    .container-logo {
+        margin-left: 25px;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------*/
+
+.contenido{
+    display:flex;
+    max-width: 144vw;
+    width: 100vw;
+    height: 26vw;
+   
+    position: relative;
+}
+
+.imagenes {
+    cursor: pointer;
+    margin-top: 2vw;
+    width: 10vw;
+    height: 4vw;
+    margin-left: 5.1vw;
+}
+
+
+.libros{
+    padding: 0;
+    margin: 1vw;
+    display:grid;
+    width: 6.8vw;
+    height: 8.3vw;
+    
+    border: 0.75vw solid rgba(122, 122, 122, 0.226);;
+}
+
+.carrito{
+    padding: 0.15vh;
+    margin: 1vw;
+    display: table-cell;
+    padding: 0; 
+    width: 50vw;
+}
+.carrito2{
+    
+    display: table-cell;
+    padding: 0; 
+    width: 10vw;
+    
+    
+}
+
+.carrito3{
+    margin: 1vw;
+    display: table-cell;
+    padding: 0; 
+    width: 20vw;
+    
+}
+
+.carrito4{
+    margin: 1vw;
+  
+ 
+    display: table-cell;
+    padding: 0; 
+    width: 15vw;
+    
+}
+
+.informacion{
+    margin-top: 3vw;
+    
+
+}
+
+
+.datoslibro1{
+
+    margin: 2vw;
+    display:grid;
+}
+
+.precio1{ 
+    margin-right: 7.5vw;
+   
+}
+
+.datoslibro2{
+    
+    margin: 2vw;
+    margin-top: 8vw;
+    display:grid;
+}
+
+.precio2{ 
+    margin-right: 7.54vw;
+    margin-top: 2vw;
+   
+}
+.datoslibro3{
+    
+    margin: 2vw;
+    margin-top: 6.79vw;
+    display:grid;
+}
+
+.precio3{ 
+    margin-right: 7.54vw;
+    margin-top: 1.13vw;
+   
+}
+
+.presentacion{
+
+    margin-top: 2.26vw;
+}
+
+
+
+.datos{
+    text-align:left;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+  
+}
+
+.datosdir{
+    font-size: 1.5vw;
+    text-align:left;
+    
+}
+.titulo-carrito{
+    text-align: center;
+}
+
+.codigo{
+      
+    margin-top: 6vw;
+
+}
+.total{
+    margin-top: 2.64vw;
+}
+
+.boton-pago{
+
+    margin-top: 2.64vw;
+    margin-left: 13.58vw;
+    border-radius: 3.77vw;
+    border-color: #ff5607;
+    background-color: #ff9113;
+
+    font-size: 2vw;
+    align-items: center;
+}
+.datos1{
+    margin-top: 1vw;
+    font-size: 1.5vw;
+}
+
+
+.titulodir{
+    margin-top:1.5vw;
+}
+
+.tituloinf{
+    margin-top:5vw;
+}

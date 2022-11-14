@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>o usa tu correo electronico para registrarte</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>INICIAR SESION</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="index.html">
+			<h1 class="titulo_registro">Sesion</h1>
+			<input type="email" placeholder="Correo electronico" />
+			<input type="password" placeholder="Clave" />
+            <button class="sesion_boton">Iniciar sesion</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Bienvenido de vuelta</h1>
+				<p>Puedes unirte con tu informacion personal</p>
+				<button class="ghost" id="signIn">Unirse</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Bienvenido a Docs</h1>
+				<p>Si aun no tienes una cuenta en Docs, puedes unirte</p>
+				<a href="registro.html">
+					<button class="ghost" id="signUp">REGISTRARSE</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
