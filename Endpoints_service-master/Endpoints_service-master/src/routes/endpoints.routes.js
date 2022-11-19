@@ -7,6 +7,7 @@ import {
 } from "../controller/endpointsin.controller.js";
 import {carrito, carrito_id, update_carrito} from "../controller/endpointsca.controller.js";
 import {login, sigin} from "../controller/endpointsus.controller.js";
+import {crearorden, feedback} from "../controller/endpointsmerca.controller.js";
 
 const router = Router()
 
