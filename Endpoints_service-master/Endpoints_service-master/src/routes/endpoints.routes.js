@@ -20,6 +20,7 @@ router.get('/carrito/:id', carrito_id)
 router.get('/update_carrito', update_carrito)
 router.get('/login', login)
 router.get('/sigin', sigin)
-
+router.get('/crear-orden', crearorden)
+router.get('/feedback', feedback)
 
 export default router
