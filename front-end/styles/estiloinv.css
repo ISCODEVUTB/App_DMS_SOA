@@ -13,15 +13,14 @@ body {
 }
 
 /*Navbar*/
-
 nav {
-    background: #ffffff;
+    background: #0e9f95;
     height: 80px;
     position: relative;
+    width: 100%;
 }
 
 .container {
-
     display: flex;
     justify-content: space-between;
     max-width: 1920px;
@@ -30,28 +29,25 @@ nav {
     margin-right: 100px;
 }
 
-.container-logo {
+.container-logo a{
     z-index: 100;
     cursor: pointer;
-    background: #4af884;
+    text-decoration: none;
 }
 
 .container-logo h2 {
-    margin-left: 10px;
+    margin-left: 5px;
+    color: #fff;
     font-weight: 240px;
     font-size: 35px;
     letter-spacing: 2px;
-    background: #4af884;
+    margin-top: 1.2vw;
 }
 
 .container-logo h2 span {
-    color: #ffffff;
+    color: #ff4000;
     font-weight: 700;
-    margin-right: 2vw;
-    
 }
-
-
 
 .links .link {
     display: inline-block;
@@ -59,12 +55,12 @@ nav {
 
 .links .link a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 17px;
     margin: 0 25px;
     letter-spacing: 3px;
     font-weight: bold;
-    transition: .3s;
+    transition: .3s;   
 }
 
 .links .link a:hover {
@@ -80,7 +76,7 @@ nav {
     font-weight: bold;
     padding: 8px;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 81px;
 }
 
 .boton_sesion:hover {
@@ -104,19 +100,23 @@ nav {
 
 
 @media screen and (max-width: 915px){
+    .nav {
+      width: 100%;
+      position: relative;
+    }
     .toggle {
         display: inline-block;
     }
 
     .links {
+        width: 100%;
         position: absolute;
         display: flex;
         flex-direction: column;
-        background: #ff0077;
+        background: #0e9f95;
         text-align: center;
         overflow: hidden;
         height: calc(100vh - 80px);
-        width: 100%;
         z-index: -1;
         top:-100vh    
     }
@@ -126,35 +126,50 @@ nav {
     }
 
     .links .link :hover{
-        background: #ec0808;
+        background: #89ff95;
     }
 
     .container-logo {
-        margin-left: 25px;
+        margin-left: 60px;
     }
 }
 
-.contenido{
 
+/*Contenido*/
+
+.contenido{
     display:flex;
     max-width: 144vw;
-    width: 100vw;
+    width: 20vw;
     height: 26vw;
-   
+    background: red;
     position: relative;
 }
 
-.prev{
-    font-size: 0.9vw;
-    color: #ffffff;
-    background: #05b6fc;
-    padding: 0.15vh;
-    
-    display: table-cell;
-    padding: 0; 
-    width: 20vw;
+table.tabla{
+    display:flex;
+    width: 90%;
     height: 46vw;
-    
+    margin-left:2vw ;
+    margin-top:2vw ;
+    position: relative;
+}
+
+.boton-eliminar{
+    background: #ff4000;
+    font-weight: bold;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #ff4000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 2vw;
+}
+
+.boton-eliminar:hover{
+    background-color: #fff;
+    color: #ff4000;
+    border: 2px solid #ff4000;
 
 }
 
@@ -190,12 +205,7 @@ nav {
 }
 
 
-
-
-
-
-
-.letras-prev{
+.letras-prev1{
     margin-left: 2vw;
 }
 .letras-prev2{
@@ -265,7 +275,51 @@ nav {
 }
 
 .imageneslibros{
-
+    margin-left: 3vw;
     width: 7vw;
     height: 7vw;
+}
+
+.tabla-c{
+    margin-top: 2vw;
+}
+@media screen and (max-width: 520px){
+
+    nav {
+        z-index: 100;
+      }
+
+    .toggle{
+        margin-left: 10vw;
+    }
+    .container-logo h2 {
+        margin-top: 5vw;
+        margin-left: 16vw;
+    }
+
+    #accion{
+        display: none !important ;
+    }
+
+    #delete{
+        display: none !important ;
+    }
+
+    #nom{
+        display: none !important ;
+    }
+
+    #nomb{
+        display: none !important ;
+    }
+
+    #pcom{
+        display: none !important ;
+    }
+
+    #pco{
+        display: none !important ;
+    }
+   
+   
 }

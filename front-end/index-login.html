@@ -18,8 +18,8 @@
       <ul class="links">
         <li class="link"><a href="index.html">Inicio</a></li>
         <li class="link"><a href="#catalogo">Catalogo</a></li>
-        <li class="link"><a href="#contacto" >Contacto</a></li>
-        <a class="boton_sesion"  id = "boton-entrar" href="sesion.html">Iniciar sesion</a>
+        <li class="link"><a href="#carrito-compras" class="fa fa-shopping-cart"></a></li>
+        <li class="link"><a href="index.html">Cerrar sesion</a></li>
         
       </ul>
       <div class="toggle">
@@ -38,7 +38,7 @@
         <h1> PERFECTO PARA LEER EN TODO<br>UN FIN DE SEMANA</h1>
       </div>
       <div class="container-botones">
-        <a href="sesion.html" class="boton-comprar">Comprar ahora</a>  
+        <a href="https://www.mercadopago.com.co/checkout/v1/redirect?pref_id=227181084-cf9fb0fa-d2fa-4f9e-a9c6-dd33f0af1b3f" class="boton-comprar">Comprar ahora</a>  
         <a class="boton-leer">Leer mas</a>
       </div>
       <div class="imagen-promocion"><img class="imagen-promocion" src="img/donquijote.png" alt="quijote"/></div>
@@ -67,12 +67,13 @@
               </div>
               <div class="card-body">
                 <span class="tag tag-teal"></span>
-                <h4>
-                </h4>
+                
                 <p>
                 </p>
                 <div class="user">
-                  <a href="sesion.html" class="fa fa-shopping-cart icono-carrito" id="icono-carrito"></a>
+                  <h4>
+                  </h4>
+                  <a class="fa fa-shopping-cart icono-carrito" id="icono-carrito"></a>
                   <div class="user-info">
                     <h5></h5>
                   </div>
@@ -85,11 +86,65 @@
       </div>
     </div>
   </div>
+
+  <section class="carrito">
+    <div class="container-tabla-footer" >
+      <h1 id="carrito-compras">Carrito de compras</h1>
+
+      <table class="table">
+        <thead class="head">
+          <tr>
+            <th scope="col">Codigo</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Accion</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody align="center" id='container-footer' class="tbody"></tbody>
+        <tfoot>
+          <tr id="pintar-footer" class="pintar-footer">
+            <th scope="row" colspan="5">Agregar producto</th>
+          </tr>
+        </tfoot>
+      </table>
+
+      <template id="template-tabla">
+        <tr>
+          <th scope="row">id</th>
+          <td>Gabo</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-info btn-sm">
+              +
+            </button>
+            <button class="btn btn-danger btn-sm">
+              -
+            </button>
+          </td>
+          <td>$<span>5000</span></td>
+        </tr>
+      </template>
+
+      <template  align="center" id="template-final">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-success btn-sm" id="vaciar-carrito">
+            Pagar
+          </button>
+        </td>
+        <td>$<span>5000</span></td>
+      </template>
+
+
+    </div>
+  </section>
   
 
   <section class="ultima-seccion">  
-    <footer class="pie-pagina">
-      <div class="grupo-1" id ="contacto">
+    <footer  id ="contacto" class="pie-pagina">
+      <div class="grupo-1">
         <div class="box">
           <figure>
             <a href="#"><img src="img/logo-fin.png"></a>
@@ -115,15 +170,13 @@
       </div>
     </footer>
   </section>
-  <script
-	src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	crossorigin="anonymous"></script>
+
+
+
   <script src = "https://unpkg.com/scrollreveal"></script>
-  <script src = "scripts/index.js"></script>
+  <script src = "scripts/principal.js"></script>
   <script src = "scripts/animaciones.js"></script>
   <script src = "scripts/main.js"></script>
-  
   
 </body>
 </html>

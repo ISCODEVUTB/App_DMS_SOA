@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="styles/styles.css">
+	<title>Sesiones</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width", initial-scale="1.0">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+			<div class="signup">
+				<form id="registro" name="registro">
+					<label for="registro" area-hidden="true">Registro</label>
+					<input type="id" placeholder="ID" id="id" name="id">
+					<input type="text" placeholder="Nombre" id="nombre" name="nombre">
+					<input type="text" placeholder="Apellido" id="apellido" name="apellido">
+					<input type="email" placeholder="Correo" id="correo" name="correo">
+					<input type="password" placeholder="Clave" id="password" name="password">
+					<button type="button" id="btnSend">Enviar</button>
+				 </form>
 			</div>
-			<span>o usa tu correo electronico para registrarte</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>INICIAR SESION</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="index.html">
-			<h1 class="titulo_registro">Sesion</h1>
-			<input type="email" placeholder="Correo electronico" />
-			<input type="password" placeholder="Clave" />
-            <button class="sesion_boton">Iniciar sesion</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Bienvenido de vuelta</h1>
-				<p>Puedes unirte con tu informacion personal</p>
-				<button class="ghost" id="signIn">Unirse</button>
+
+			<div class="login" id = "login">
+				<form id="login-r">
+					<label for="chk" aria-hidden="true"> Iniciar sesion</label>
+					<input type="email" for="correo" id ="correo-sesion" name="correo" placeholder="Correo electronico" required="">
+					<input type="password" for="password" id = "password-sesion" name="password" placeholder="Contraseña" required="">
+					<button type="button" id="entrar-sesion">Entrar</button>
+				</form>
 			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Bienvenido a Docs</h1>
-				<p>Si aun no tienes una cuenta en Docs, puedes unirte</p>
-				<a href="registro.html">
-					<button class="ghost" id="signUp">REGISTRARSE</button>
-				</a>
-			</div>
-		</div>
 	</div>
-</div>
-<script src="scripts/scripts.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	crossorigin="anonymous"></script>
+	<script src="scripts/scripts.js"></script>
 </body>
 </html>
