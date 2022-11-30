@@ -1,4 +1,5 @@
 # App sistema de gestión documental
+![App](https://images2.imgbox.com/49/de/SeCNmc9F_o.png "App")
 #### PROPIETARIOS DEL CONTENIDO
 ###### [Lucas Mateo Pedrozo Pertuz](mailto:lpedrozo@utb.edu.co "Lucas Mateo Pedrozo Pertuz"),[ Michael Andres Casadiegos Berrio](mailto:mcasadiegos@utb.edu.co " Michael Andres Casadiegos Berrio"), [Jose Miguel Mendoza Sepulveda](mailto:sepulvedaj@utb.edu.co "Jose Miguel Mendoza Sepulveda")
 #### PROFESOR
